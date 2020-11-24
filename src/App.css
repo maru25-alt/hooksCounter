@@ -1,38 +1,66 @@
+body {
+  background: #323954;
+}
 .App {
-  text-align: center;
+  display: grid;
+  place-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.counter__container {
+  background: #fff;
+  padding: 20px;
+  min-width: 300px;
+  border-radius: 20px;
+  min-height: 100px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.counter {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.counter > button {
+  background: #323954;
+  border: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.counter > button:hover {
+  background: #46b;
 }
 
-.App-link {
-  color: #61dafb;
+button:focus {
+  outline: none;
+}
+.counter span {
+  font-weight: 800;
+  font-size: 2em;
+}
+.red__Counter {
+  color: red;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.reset__button {
+  width: 20%;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background: #f12;
+  border: none;
+  color: #fff;
+}
+
+.reset__button:hover {
+  opacity: 0.5;
+}
+
+button[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
 }
